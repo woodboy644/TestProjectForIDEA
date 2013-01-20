@@ -2,6 +2,7 @@
 
 import os, sys
 from module import Hoge
+from module import Greeting
 
 # exit script
 def ending():
@@ -11,5 +12,10 @@ def ending():
 if __name__ == '__main__':
 	hoge = Hoge.Hoge()
 	hoge.printMsg("hogehoge")
+
+	print '-' * 30
+
+	greeting = Greeting.Greeting()
+	greeting.howAreYou()
 
 	ending()
