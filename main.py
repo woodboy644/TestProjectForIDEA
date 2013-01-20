@@ -19,4 +19,6 @@ if __name__ == '__main__':
     greeting = Greeting.Greeting()
     greeting.howAreYou()
 
+    print '-' * 30
+
     ending()
