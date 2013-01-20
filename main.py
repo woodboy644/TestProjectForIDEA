@@ -1,6 +1,7 @@
 ﻿#coding: utf-8
 
 import os, sys
+from module import Hoge
 
 # exit script
 def ending():
@@ -8,5 +9,7 @@ def ending():
 	sys.exit()
 
 if __name__ == '__main__':
+	hoge = Hoge.Hoge()
+	hoge.printMsg("hogehoge")
 
 	ending()
