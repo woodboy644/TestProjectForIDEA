@@ -1,21 +1,22 @@
 ﻿#coding: utf-8
 
-import os, sys
-from module import Hoge
+import sys
+from module import hoge
 from module import Greeting
 
 # exit script
 def ending():
-	dummy = raw_input('Press Enter to Exit')
-	sys.exit()
+    dummy = raw_input('Press Enter to Exit')
+    print 'exit script ...'
+    sys.exit()
 
 if __name__ == '__main__':
-	hoge = Hoge.Hoge()
-	hoge.printMsg("hogehoge")
+    insHoge = hoge.Hoge()
+    insHoge.printMsg("Hello world")
 
-	print '-' * 30
+    print '-' * 30
 
-	greeting = Greeting.Greeting()
-	greeting.howAreYou()
+    greeting = Greeting.Greeting()
+    greeting.howAreYou()
 
-	ending()
+    ending()
